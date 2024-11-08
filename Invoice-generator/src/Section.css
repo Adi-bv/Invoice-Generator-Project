@@ -1,0 +1,74 @@
+.signup-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100vh;
+}
+
+.welcome-section {
+  grid-column: span 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6A1B9A, #8E24AA, #AB47BC);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.signup-form-section {
+  grid-column: span 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  width: 80%;
+}
+
+.outer-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.inputData {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .signup-grid {
+    display: flex;
+    flex-direction: column;
+    /* height: auto; */
+  } 
+
+  .welcome-section, .signup-form-section {
+    grid-column: span 12;
+    width: 100%;
+  }
+
+  .welcome-section {
+    padding: 10px;
+    font-size: 1.5em;
+    min-height: 30%;
+  }
+  .signup-form-section{
+    padding-top: 20px;
+  }
+}
